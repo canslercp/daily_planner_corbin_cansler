@@ -18,7 +18,7 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Work Day Scheduler</title>
   </head>
 
@@ -28,11 +28,44 @@
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
     </header>
+
     <div class="container">
-      <!-- Timeblocks go here -->
+
+      <div class="input-group mb-3 input-group-lg" id="nineAm">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroup-sizing-lg">9AM</span>
+        </div>
+        <input type="text" class="form-control custForm" placeholder="Add event here" aria-label="Recipient's username" aria-describedby="basic-addon2" id="eventInput">
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary" type="button" id="button">Save</button>
+        </div>
+      </div>
+      
+      <div class="input-group mb-3 input-group-lg">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroup-sizing-lg">10AM</span>
+        </div>
+        <input type="text" class="form-control" placeholder="Add event here" aria-label="Recipient's username" aria-describedby="basic-addon2">
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary" type="button">Save</button>
+        </div>
+      </div>
+
+      <div class="input-group mb-3 input-group-lg">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroup-sizing-lg">11AM</span>
+        </div>
+        <input type="text" class="form-control" placeholder="Add event here" aria-label="Recipient's username" aria-describedby="basic-addon2">
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary" type="button">Save</button>
+        </div>
+      </div>
+
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src='./assets/js/script.js'></script>
   </body>
 </html>
